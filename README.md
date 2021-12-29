@@ -14,3 +14,4 @@ testar lite igen och har installerat git
 hej roger
 
 hej igen
+Gud vad jag kommer få huvudvärk av Git
