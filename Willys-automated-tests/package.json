@@ -1,0 +1,17 @@
+{
+  "name": "willys-kom-igang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/updated-selenium-cucumber-js/index",
+    "test-pcategories": "node node_modules/updated-selenium-cucumber-js/index -f features/product-categories.feature",
+    "test-some-other-feature": "node node_modules/updated-selenium-cucumber-js/index -f features/some-other-feature.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "updated-selenium-cucumber-js": "^1.8.3-rc4"
+  }
+}

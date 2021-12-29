@@ -1,0 +1,83 @@
+[
+  {
+    "description": "  YYY",
+    "elements": [
+      {
+        "id": "xxx;some-scenario",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Some scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 8821372542
+            },
+            "line": 5,
+            "match": {
+              "location": "/Users/thomasfrank/Desktop/willys-kom-igang/step-definitions/common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 9538532708
+            },
+            "line": 6,
+            "match": {
+              "location": "/Users/thomasfrank/Desktop/willys-kom-igang/step-definitions/common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 11387134417
+            },
+            "line": 7,
+            "match": {
+              "location": "/Users/thomasfrank/Desktop/willys-kom-igang/step-definitions/common-background.js:28"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "something I haven't written yet",
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 204874958
+            },
+            "hidden": true,
+            "match": {
+              "location": "/Users/thomasfrank/Desktop/willys-kom-igang/node_modules/updated-selenium-cucumber-js/runtime/world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "xxx",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "XXX",
+    "tags": [],
+    "uri": "/Users/thomasfrank/Desktop/willys-kom-igang/features/some-other-feature.feature"
+  }
+]

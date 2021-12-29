@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="xxx;some-scenario" tests="4" failures="0" skipped="1">
+        <properties>
+            <property name="URI" value="/Users/thomasfrank/Desktop/willys-kom-igang/features/some-other-feature.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="xxx;some-scenario" time="8.821372542">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="xxx;some-scenario" time="9.538532708">
+        </testcase>
+        <testcase name="And that we have have been through the initial where to deliver popup" classname="xxx;some-scenario" time="11.387134417">
+        </testcase>
+        <testcase name="Given something I haven&apos;t written yet" classname="xxx;some-scenario">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>
