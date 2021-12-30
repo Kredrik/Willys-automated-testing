@@ -15,3 +15,4 @@ hej roger
 
 hej igen
 Gud vad jag kommer få huvudvärk av Git
+Testa detta fredrik!
