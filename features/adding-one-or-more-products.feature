@@ -1,5 +1,5 @@
-Feature: XXX
-  YYY
+Feature: Adding one or more products
+  As a user I want to be able to add one or more items of the same product in the cart.
 
   Background:
     Given that we are on Willy's website
