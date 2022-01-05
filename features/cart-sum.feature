@@ -3,7 +3,7 @@ Feature: Cart sum
 	correct price and that I can see the total price before I choose to buy.
 
 	Background:
-		Given that we are on the Willy's website
+		Given that we are on Willy's website
 		And that we accepted the standard cookie policy
 		And that we have been through the initial where to deliver popup
 

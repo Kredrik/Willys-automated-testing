@@ -3,7 +3,7 @@ Feature: Empty whole cart
   scratch.
 
   Background:
-    Given that we are on the willy’s website
+    Given that we are on Willy's website
     And that we accepted the standard cookie policy
     And that we have been through the initial where to deliver popup
 
