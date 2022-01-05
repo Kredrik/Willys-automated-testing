@@ -7,7 +7,7 @@ Feature: Empty whole cart
     And that we accepted the standard cookie policy
     And that we have been through the initial where to deliver popup
 
-  Scenario:
+  Scenario: Select the cart and empty the cart
     Given that there is at least 1 product in the cart
     When the user click the cart button
     And the user click the empty button
