@@ -1,7 +1,7 @@
 let slowDown = true;
 
 async function waitAWhile() {
-  await driver.sleep(slowDown ? 5000 : 0);
+  await driver.sleep(slowDown ? 2500 : 0);
 }
 
 module.exports = function () {

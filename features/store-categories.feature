@@ -7,5 +7,7 @@ Feature: Store categories
     And that we accepted the standard cookie policy
     And that we have have been through the initial where to deliver popup
 
-  Scenario: Choose the "Meat" category and check that it contains products.
-    Given something I haven't written yet
+  Scenario: Select the "Skafferi" category to see if it contains products
+	  When I click on the category Skafferi
+	  Then I should be directed to the Skafferi category page
+	  And the products for the category should be visible
