@@ -1,23 +1,13 @@
 # Willys-automated-testing
-Use of tools: Cucumber (Gherkin) and Selenium
-Hey ho!
-Hey ho from Simon
-testar lite
-Gör också ett scrum test
+Testing the website Willys.se for specific functions
+3rd and last project for the partcourse "Programmering för testare" @ Jensen Yrkeshögskola
+Teacher: Thomas Frank
+Use of test tools: Cucumber (Gherkin) and Selenium
+Other tools: Visual Studio Code, GitHub Desktop, Chrome
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-testar lite
-Ska vi testa en gång till
+Team: 
+Scrum master - Christoffer Gustavsson
+Testers and Developers - Fredrik Kastberg, Simon Haag, Roger Lindblom, Carl-Johan Tornberg
 
-Nej vi ska inte testa en gång till din dumbo! :-)
-testar lite igen och har installerat git
-hej roger
-
-hej igen
-Gud vad jag kommer få huvudvärk av Git
-Testa detta fredrik!
-
-Nu testar jag hehe
-Jag vill sova förmiddag
-
-Dax att dra snart!
+GitHub:
+https://github.com/Kredrik/Willys-automated-testing
