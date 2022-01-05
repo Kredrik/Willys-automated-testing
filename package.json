@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/updated-selenium-cucumber-js/index",
-    "test-pcategories": "node node_modules/updated-selenium-cucumber-js/index -f features/product-categories.feature",
-    "test-some-other-feature": "node node_modules/updated-selenium-cucumber-js/index -f features/some-other-feature.feature"
+    "test-pcategories": "node node_modules/updated-selenium-cucumber-js/index -f features/store-categories.feature",
+    "test-some-other-feature": "node node_modules/updated-selenium-cucumber-js/index -f features/some-other-feature.feature",
+    "test-cart-sum":"node node_modules/updated-selenium-cucumber-js/index -f features/cart-sum.feature" 
   },
   "keywords": [],
   "author": "",
