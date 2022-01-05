@@ -5,8 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "node node_modules/updated-selenium-cucumber-js/index",
+    "test-adding-one-or-more-products": "node node_modules/updated-selenium-cucumber-js/index -f features/adding-one-or-more-products.feature",
+    "test-cart-quantity": "node node_modules/updated-selenium-cucumber-js/index -f features/cart-quantity.feature",
+    "test-cart-sum": "node node_modules/updated-selenium-cucumber-js/index -f features/cart-sum.feature",
+    "test-cart-view": "node node_modules/updated-selenium-cucumber-js/index -f features/cart-view.feature",
+    "test-empty-whole-cart": "node node_modules/updated-selenium-cucumber-js/index -f features/empty-whole-cart.feature",
+    "test-removal-of-product": "node node_modules/updated-selenium-cucumber-js/index -f features/removal-of-product.feature",
     "test-store-categories": "node node_modules/updated-selenium-cucumber-js/index -f features/store-categories.feature",
-    "test-cart-sum": "node node_modules/updated-selenium-cucumber-js/index -f features/cart-sum.feature"
+    "test-view-product-page": "node node_modules/updated-selenium-cucumber-js/index -f features/view-product-page.feature"
   },
   "keywords": [],
   "author": "",
