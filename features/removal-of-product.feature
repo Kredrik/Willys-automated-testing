@@ -7,7 +7,7 @@ Feature: Removal of product
     And that we accepted the standard cookie policy
     And that we have been through the initial where to deliver
 
-  Scenario:
+  Scenario: Select a product and remove it
     Given that there is a product in the cart to remove
     When the user click the cart button
     And the user change the amount to 0 for the specific product
