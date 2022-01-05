@@ -5,11 +5,11 @@
             <property name="URI" value="C:/Users/F/Documents/GitHub/Willys-automated-test/features/adding-one-or-more-products.feature">
             </property>
         </properties>
-        <testcase name="Given that we are on Willy&apos;s website" classname="xxx;some-scenario" time="2.714522">
+        <testcase name="Given that we are on Willy&apos;s website" classname="xxx;some-scenario" time="2.7095535">
         </testcase>
-        <testcase name="And that we accepted the standard cookie policy" classname="xxx;some-scenario" time="4.2226242">
+        <testcase name="And that we accepted the standard cookie policy" classname="xxx;some-scenario" time="4.7002358">
         </testcase>
-        <testcase name="And that we have have been through the initial where to deliver popup" classname="xxx;some-scenario" time="5.9150148">
+        <testcase name="And that we have have been through the initial where to deliver popup" classname="xxx;some-scenario" time="5.5476945">
         </testcase>
         <testcase name="Given something I haven&apos;t written yet" classname="xxx;some-scenario">
             <skipped message="">
@@ -21,13 +21,13 @@
             <property name="URI" value="C:/Users/F/Documents/GitHub/Willys-automated-test/features/store-categories.feature">
             </property>
         </properties>
-        <testcase name="Given that we are on Willy&apos;s website" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="2.3490514">
+        <testcase name="Given that we are on Willy&apos;s website" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="4.2359281">
         </testcase>
-        <testcase name="And that we accepted the standard cookie policy" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="4.694146">
+        <testcase name="And that we accepted the standard cookie policy" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="4.6233963">
         </testcase>
-        <testcase name="And that we have have been through the initial where to deliver popup" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="5.5438615">
+        <testcase name="And that we have have been through the initial where to deliver popup" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="5.5066857">
         </testcase>
-        <testcase name="When I click on the category Skafferi" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="0.0001635">
+        <testcase name="When I click on the category Skafferi" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="0.0001874">
         </testcase>
         <testcase name="Then I should be directed to the Skafferi category page" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products">
             <skipped message="">

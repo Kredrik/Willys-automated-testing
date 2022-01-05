@@ -14,7 +14,7 @@
             "name": "that we are on Willy's website",
             "result": {
               "status": "passed",
-              "duration": 2714522000
+              "duration": 2709553500
             },
             "line": 5,
             "match": {
@@ -27,7 +27,7 @@
             "name": "that we accepted the standard cookie policy",
             "result": {
               "status": "passed",
-              "duration": 4222624200
+              "duration": 4700235800
             },
             "line": 6,
             "match": {
@@ -40,7 +40,7 @@
             "name": "that we have have been through the initial where to deliver popup",
             "result": {
               "status": "passed",
-              "duration": 5915014800
+              "duration": 5547694500
             },
             "line": 7,
             "match": {
@@ -61,7 +61,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 619416600
+              "duration": 4216912100
             },
             "hidden": true,
             "match": {
@@ -95,7 +95,7 @@
             "name": "that we are on Willy's website",
             "result": {
               "status": "passed",
-              "duration": 2349051400
+              "duration": 4235928100
             },
             "line": 6,
             "match": {
@@ -108,7 +108,7 @@
             "name": "that we accepted the standard cookie policy",
             "result": {
               "status": "passed",
-              "duration": 4694146000
+              "duration": 4623396300
             },
             "line": 7,
             "match": {
@@ -121,7 +121,7 @@
             "name": "that we have have been through the initial where to deliver popup",
             "result": {
               "status": "passed",
-              "duration": 5543861500
+              "duration": 5506685700
             },
             "line": 8,
             "match": {
@@ -134,7 +134,7 @@
             "name": "I click on the category Skafferi",
             "result": {
               "status": "passed",
-              "duration": 163500
+              "duration": 187400
             },
             "line": 11,
             "match": {
@@ -164,7 +164,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4301857900
+              "duration": 682100400
             },
             "hidden": true,
             "match": {
