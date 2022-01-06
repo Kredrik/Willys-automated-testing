@@ -16,7 +16,7 @@ module.exports = function () {
 
   });
 
-  this.Then(/^the user clicks the övrigt-tab to view information about the product$/, async function () {
+  this.Then(/^the user clicks the other info-tab to view information about the product$/, async function () {
 
     let otherInfoTab = await driver.findElement(By.css('div[ax-analytics2-action="ProductPage_ProductInfo_OtherInfo"]'));
     await otherInfoTab.click();
