@@ -6,27 +6,23 @@ module.exports = function () {
     await veckansVarorImg.click();
   })
 
-  this.Then(/^the user should be shown an overview of the product$/, async function () {
+  this.Then(/^the user should be shown an overview of the product and different tabs$/, async function () {
 
-    /*
-    await driver.sleep(3000);
-    let clickTabOvrigt = await driver.findElement(By.css('#tab-item-326'));
-    await clickTabOvrigt.click();
+    await driver.sleep(5000);
 
-    await driver.sleep(3000);
-
-
-
-    
     let h1Text;
     while (h1Text !== 'Majskyckling Hel Sverige') {
-      h1Text = await (await driver.findElement(By.css('h1'))).getText();
+      h1Text = await (await driver.findElement(By.css('.product-detail-title'))).getText();
       await driver.sleep(100);
     }
 
-    await driver.sleep(3000);
-    */
-
   })
-
+  /*
+    this.Then(/^the user clicks the övrigt-tab to view information about the product$/, async function () {
+  
+      let clickTabOvrigt = await driver.findElement(By.css('#tab-item-326'));
+      await clickTabOvrigt.click();
+      await driver.sleep(3000);
+  
+    })*/
 }

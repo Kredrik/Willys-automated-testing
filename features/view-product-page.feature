@@ -8,5 +8,5 @@ Feature: View Product Page
 
   Scenario: Click a specific product to view the detailed product page
     When the user clicks on a product
-    Then the user should be shown an overview of the product
-    And will be given the option to view the different tabs for the product
+    Then the user should be shown an overview of the product and different tabs
+    And the user clicks the övrigt-tab to view information about the product
