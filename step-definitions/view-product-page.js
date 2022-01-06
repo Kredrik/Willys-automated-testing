@@ -11,14 +11,18 @@ module.exports = function () {
     await driver.sleep(5000);
     let h1Text;
 
-    h1Text = await (await driver.findElement(By.css('.product-detail-title'))).getText();
+    h1Text = await (await driver.findElement
+      (By.css('.product-detail-title'))).getText();
+
     expect(h1Text).to.not.equal(null);
 
   });
 
-  this.Then(/^the user clicks the other info-tab to view information about the product$/, async function () {
+  this.Then(/^the user clicks the other info-tab to view other information about the product$/, async function () {
 
-    let otherInfoTab = await driver.findElement(By.css('div[ax-analytics2-action="ProductPage_ProductInfo_OtherInfo"]'));
+    let otherInfoTab = await driver.findElement
+      (By.css('div[ax-analytics2-action="ProductPage_ProductInfo_OtherInfo"]'));
+
     await otherInfoTab.click();
     await driver.sleep(3000);
 
