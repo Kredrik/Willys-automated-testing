@@ -1,6 +1,6 @@
 module.exports = function () {
 
-  this.When(/^the user has selected products in the cart$/, async function () {
+  this.When(/^the user has selected products and added them to the cart$/, async function () {
 
     let fruitsAndGreensMenu = await driver.findElement
       (By.css('a[href="/sortiment/frukt-och-gront"'));
@@ -27,4 +27,4 @@ module.exports = function () {
 
   })
 
-}
+};
