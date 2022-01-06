@@ -1,6 +1,6 @@
 Feature: Cart view
-    As a user I want to be able to visit the cart
-    And see the products that have been selected so I can buy them
+  As a user I want to be able to visit the cart
+  to see the products that have been selected so I can buy them
 
   Background:
     Given that we are on Willy's website
