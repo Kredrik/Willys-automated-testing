@@ -1,12 +1,12 @@
 [
   {
-    "description": "  YYY",
+    "description": "  As a user I want to click on a product to receive more details about it.",
     "elements": [
       {
-        "id": "xxx;some-scenario",
+        "id": "view-product-page;click-a-specific-product-to-view-the-detailed-product-page",
         "keyword": "Scenario",
         "line": 9,
-        "name": "Some scenario",
+        "name": "Click a specific product to view the detailed product page",
         "steps": [
           {
             "arguments": [],
@@ -14,11 +14,11 @@
             "name": "that we are on Willy's website",
             "result": {
               "status": "passed",
-              "duration": 2709553500
+              "duration": 2290870800
             },
             "line": 5,
             "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\step-definitions\\common-background.js:9"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
             }
           },
           {
@@ -27,11 +27,11 @@
             "name": "that we accepted the standard cookie policy",
             "result": {
               "status": "passed",
-              "duration": 4700235800
+              "duration": 3884224300
             },
             "line": 6,
             "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\step-definitions\\common-background.js:13"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
             }
           },
           {
@@ -40,111 +40,43 @@
             "name": "that we have have been through the initial where to deliver popup",
             "result": {
               "status": "passed",
-              "duration": 5547694500
+              "duration": 5350856100
             },
             "line": 7,
             "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\step-definitions\\common-background.js:28"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "something I haven't written yet",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 4216912100
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "xxx",
-    "keyword": "Feature",
-    "line": 1,
-    "name": "XXX",
-    "tags": [],
-    "uri": "C:/Users/F/Documents/GitHub/Willys-automated-test/features/adding-one-or-more-products.feature"
-  },
-  {
-    "description": "  As as user I want to be able to visit different\n  product categories in order to see the products they contain.",
-    "elements": [
-      {
-        "id": "store-categories;select-the-\"skafferi\"-category-to-see-if-it-contains-products",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Select the \"Skafferi\" category to see if it contains products",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that we are on Willy's website",
-            "result": {
-              "status": "passed",
-              "duration": 4235928100
-            },
-            "line": 6,
-            "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\step-definitions\\common-background.js:9"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "that we accepted the standard cookie policy",
-            "result": {
-              "status": "passed",
-              "duration": 4623396300
-            },
-            "line": 7,
-            "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\step-definitions\\common-background.js:13"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "that we have have been through the initial where to deliver popup",
-            "result": {
-              "status": "passed",
-              "duration": 5506685700
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\step-definitions\\common-background.js:28"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:28"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click on the category Skafferi",
+            "name": "the user clicks on a product",
             "result": {
               "status": "passed",
-              "duration": 187400
+              "duration": 190969700
             },
-            "line": 11,
+            "line": 10,
             "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\step-definitions\\store-categories.js:4"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\view-product-page.js:3"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should be directed to the Skafferi category page",
+            "name": "the user should be shown an overview of the product and different tabs",
+            "result": {
+              "status": "passed",
+              "duration": 5060322800
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\view-product-page.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user clicks the övrigt-tab to view other information about the product",
             "result": {
               "status": "undefined"
             },
@@ -152,23 +84,14 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "the products for the category should be visible",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13
-          },
-          {
-            "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 682100400
+              "duration": 4181309500
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\F\\Documents\\GitHub\\Willys-automated-test\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -176,11 +99,11 @@
         "type": "scenario"
       }
     ],
-    "id": "store-categories",
+    "id": "view-product-page",
     "keyword": "Feature",
     "line": 1,
-    "name": "Store categories",
+    "name": "View Product Page",
     "tags": [],
-    "uri": "C:/Users/F/Documents/GitHub/Willys-automated-test/features/store-categories.feature"
+    "uri": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\features\\view-product-page.feature"
   }
 ]
