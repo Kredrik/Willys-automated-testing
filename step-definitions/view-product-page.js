@@ -11,12 +11,11 @@ module.exports = function () {
     await driver.sleep(5000);
 
     let h1Text;
-    while (h1Text !== 'Majskyckling Hel Sverige') {
-      h1Text = await (await driver.findElement(By.css('.product-detail-title'))).getText();
-      await driver.sleep(100);
-    }
 
-  })
+    h1Text = await (await driver.findElement(By.css('.product-detail-title'))).getText();
+    expect(h1Text).to.not.equal(null);
+
+  });
 
   this.Then(/^the user clicks the övrigt-tab to view information about the product$/, async function () {
 
