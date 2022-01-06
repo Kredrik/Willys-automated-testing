@@ -10,7 +10,5 @@ Feature: Removal of product
   Scenario: Select a product and remove it
     Given that there is a product in the cart to remove
     When the user click the cart button
-    And the user change the amount to 0 for the specific product
-    And the user hit the small ok button
-    Then the number of the specific product should be set to 0
-    And the product should be removed from the cart
+    And the user change the amount to "0" for the specific product
+    Then the user hit the small ok button and the specific product should be removed
