@@ -17,12 +17,12 @@ module.exports = function () {
     }
 
   })
-  /*
-    this.Then(/^the user clicks the övrigt-tab to view information about the product$/, async function () {
-  
-      let clickTabOvrigt = await driver.findElement(By.css('#tab-item-326'));
-      await clickTabOvrigt.click();
-      await driver.sleep(3000);
-  
-    })*/
+
+  this.Then(/^the user clicks the övrigt-tab to view information about the product$/, async function () {
+
+    let allTabs = await driver.findElement(By.css('div[ax-analytics2-action="ProductPage_ProductInfo_OtherInfo"]'));
+    await allTabs.click();
+    await driver.sleep(3000);
+
+  })
 }
