@@ -8,7 +8,7 @@ Feature: Cart view
     And that we have been through the initial where to deliver popup
 
   Scenario: Select the cart and view the selected products
-    When the user has selected products in the cart
-    And clicks on the cart tab
-    Then the user should see selected products
+    When the user has selected products and added them the cart
+    And clicks on the cart icon
+    Then the user should see the selected products
     And will have the option to buy them
