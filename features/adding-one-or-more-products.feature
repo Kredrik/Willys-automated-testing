@@ -4,7 +4,7 @@ Feature: Adding one or more products
   Background:
     Given that we are on Willy's website
     And that we accepted the standard cookie policy
-    And that we have have been through the initial where to deliver popup
+    And that we have been through the initial where to deliver popup
 
   Scenario: Add the first available product to the cart and try to increase the quantity of it in the cart
     When the user clicks on the plus icon next to the first available product

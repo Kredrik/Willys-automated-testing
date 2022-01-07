@@ -5,7 +5,7 @@ Feature: Cart view
   Background:
     Given that we are on Willy's website
     And that we accepted the standard cookie policy
-    And that we have have been through the initial where to deliver popup
+    And that we have been through the initial where to deliver popup
 
   Scenario: Select the cart and view the selected products
     When the user has selected products and added them to the cart

@@ -5,7 +5,7 @@ Feature: Cart quantity
   Background:
     Given that we are on Willy's website
     And that we accepted the standard cookie policy
-    And that we have have been through the initial where to deliver popup
+    And that we have been through the initial where to deliver popup
 
   Scenario: Increasing the quantity of a product in the cart
     Given that there are products in the cart

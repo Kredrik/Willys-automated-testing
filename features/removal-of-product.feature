@@ -5,7 +5,7 @@ Feature: Removal of product
   Background:
     Given that we are on Willy's website
     And that we accepted the standard cookie policy
-    And that we have have been through the initial where to deliver popup
+    And that we have been through the initial where to deliver popup
 
   Scenario: Select a product and remove it
     Given that there is a product in the cart to remove

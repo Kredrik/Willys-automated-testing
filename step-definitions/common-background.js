@@ -25,7 +25,7 @@ module.exports = function () {
     await waitAWhile();
   });
 
-  this.Given(/^that we have have been through the initial where to deliver popup$/, async function () {
+  this.Given(/^that we have been through the initial where to deliver popup$/, async function () {
     // Grab the plus-button of the first product and click it
     let plusButton = await driver.findElement(By.css('.ax-product-quantity-plus'));
     let body = await driver.findElement(By.css('body'));
