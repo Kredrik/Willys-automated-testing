@@ -4,7 +4,7 @@ Feature: View Product Page
   Background:
     Given that we are on Willy's website
     And that we accepted the standard cookie policy
-    And that we have have been through the initial where to deliver popup
+    And that we have been through the initial where to deliver popup
 
   Scenario: Click a specific product to view the detailed product page
     When the user clicks on a product
