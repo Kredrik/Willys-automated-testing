@@ -1,15 +1,21 @@
 module.exports = function () {
 
+  let price;
+
   this.Given(/^that we are on the Bröd category$/, async function () {
 
-    let breadAndCookies = await driver.findElement(by.css('a[href="/sortiment/brod-och-kakor"]'));
+    let breadAndCookies = await driver.findElement
+      (by.css('a[href="/sortiment/brod-och-kakor"]'));
     await breadAndCookies.click();
-    await driver.wait(until.elementsLocated(by.css('a[href="/sortiment/brod-och-kakor/brod"]')), 10000);
 
-    let breadLink = await driver.findElement(by.css('a[href="/sortiment/brod-och-kakor/brod"]'));
+    await driver.wait(until.elementsLocated
+      (by.css('a[href="/sortiment/brod-och-kakor/brod"]')), 10000);
+    let breadLink = await driver.findElement
+      (by.css('a[href="/sortiment/brod-och-kakor/brod"]'));
 
 
-    await driver.executeScript('document.querySelector(\'a[href="/sortiment/brod-och-kakor/brod"]\').scrollIntoView()');
+    await driver.executeScript
+      ('document.querySelector(\'a[href="/sortiment/brod-och-kakor/brod"]\').scrollIntoView()');
     await breadLink.click();
   });
 
@@ -21,21 +27,21 @@ module.exports = function () {
     let numberOfBaguettes = 5;
     for (let product of products) {
       baguette = (await product.getText()).includes('Baguette Hel');
-      await driver.sleep(1000);
+      await driver.sleep(500);
       if (baguette) {
         for (i = 0; i < numberOfBaguettes; i++) {
           let plusIcon = await (await product.findElement(by.css('button[title="Öka antal"]')));
           await plusIcon.click();
-          driver.sleep(700);
+          driver.sleep(500);
         }
-        let price =
-          +((await (await product.findElement(by.css('div[class*="PriceLabel"]')))
+        price =
+          +((await (await product.findElement
+            (by.css('div[class*="PriceLabel"]')))
             .getText()).split('\n').join('.').split('./st').join(''));
         console.log('Priset:', (price * numberOfBaguettes));
         break;
       }
     }
-    await driver.sleep(6000);
 
   });
   this.Given(/^the user press the cart button$/, async function () {
@@ -47,9 +53,18 @@ module.exports = function () {
 
   this.Then(/^the user see that the cart shows the correct total price$/, async function () {
 
-    //Gör egen beräkning
-    await driver.sleep(3000);
-    //Hämta data från kundvagnen
+    await driver.wait(until.elementsLocated(by.css('p[class*="price"]')));
+    let cartPrice =
+      +((await (await driver.findElement
+        (by.css('p[class*="price"]')))
+        .getText()).split(',').join('.').split(' kr').join(''));
+
+    let totalQuantity = +((await (await driver.findElement
+      (by.css('input[class*="CartQuantity"]')))
+      .getAttribute("value")).split(' st').join(''));
+
+    let pricePerBaguette = (cartPrice / totalQuantity);
+    expect(price).to.be.equal(pricePerBaguette)
   });
 
 };
