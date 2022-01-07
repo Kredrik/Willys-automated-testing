@@ -8,6 +8,7 @@ Feature: Cart sum
 		And that we have been through the initial where to deliver popup
 
 	Scenario: Add different bread products and check the cart to see if the sum is calculated correctly
-		Given that there are products in the cart
+		Given that we are on the Bröd category
+		And that there are products in the cart
 		And the user press the cart button
 		Then the user see that the cart shows the correct total price
