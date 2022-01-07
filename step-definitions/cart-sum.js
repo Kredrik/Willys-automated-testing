@@ -59,9 +59,11 @@ module.exports = function () {
         (by.css('p[class*="price"]')))
         .getText()).split(',').join('.').split(' kr').join(''));
 
-    let totalQuantity = +((await (await driver.findElement
+    let totalQuantity = (await (await driver.findElement
       (by.css('input[class*="CartQuantity"]')))
-      .getAttribute("value")).split(' st').join(''));
+      .getAttribute("value"));
+
+    totalQuantity = +totalQuantity.substring(0, totalQuantity.length - 3);
 
     let pricePerBaguette = (cartPrice / totalQuantity);
     expect(price).to.be.equal(pricePerBaguette)
