@@ -25,7 +25,7 @@ module.exports = function () {
 
     let Cartbutton = await driver.findElements(By.css('document.querySelector("#selenium--miniCart-empty-cart-btn")'));
     await cartButton.click();
-    await driver.wait(until.elementsLocated(By,css('document.querySelector("#selenium--miniCart-empty-cart-btn")')));
+    await driver.wait(until.elementsLocated(By.css('document.querySelector("#selenium--miniCart-empty-cart-btn")')));
     await driver.sleep(3000);
   });
   
