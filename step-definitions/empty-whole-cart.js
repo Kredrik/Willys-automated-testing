@@ -1,8 +1,8 @@
 module.exports = function () {
 
-    this.Given(/that there is at least 1 product in the cart$/, async function (){
+  this.Given(/that there is at least 1 product in the cart$/, async function () {
 
-        let allButtons = await driver.findElements(By.css('button'));
+    let allButtons = await driver.findElements(By.css('button'));
     let plusButton1 = allButtons[15];
     await plusButton1.click();
     await driver.sleep(3000);
@@ -13,7 +13,7 @@ module.exports = function () {
 
   });
 
-  this.When(/^the user click the cart button$/, async function () {
+  this.When(/^the user clicks the cart button$/, async function () {
 
     let cartButton = await driver.findElement(By.css('button[class*="ax-btn-fab"]'));
     await cartButton.click();
@@ -21,16 +21,16 @@ module.exports = function () {
     await driver.sleep(3000);
   });
 
-  this.When(/the user click the empty button$/, async function ( ) {
+  this.When(/the user click the empty button$/, async function () {
 
     let Cartbutton = await driver.findElements(By.css('document.querySelector("#selenium--miniCart-empty-cart-btn")'));
     await cartButton.click();
     await driver.wait(until.elementsLocated(By.css('document.querySelector("#selenium--miniCart-empty-cart-btn")')));
     await driver.sleep(3000);
   });
-  
+
   this.When(/the user agree to the popup that assures that the user want to empty the cart$/, async function () {
-    let button =await driver.findElements(By.css('document.querySelector("#dialogContent_55 > md-dialog-actions > button.ax-btn-primary.md-button.md-ink-ripple")'));
+    let button = await driver.findElements(By.css('document.querySelector("#dialogContent_55 > md-dialog-actions > button.ax-btn-primary.md-button.md-ink-ripple")'));
     await button.click();
     await driver.wait(untill.elementsLocated(By.css('document.querySelector("#dialogContent_55 > md-dialog-actions > button.ax-btn-primary.md-button.md-ink-ripple")')));
     await driver.sleep(3000);
@@ -38,5 +38,5 @@ module.exports = function () {
 
 
 
-    
+
 };

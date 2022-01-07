@@ -9,7 +9,7 @@ Feature: Empty whole cart
 
   Scenario: Select the cart and empty the cart
     Given that there is at least 1 product in the cart
-    When the user click the cart button
+    When the user clicks the cart button
     And the user click the empty button
     And the user agree to the popup that assures that the user want to empty the cart
     Then the cart should be emptied
