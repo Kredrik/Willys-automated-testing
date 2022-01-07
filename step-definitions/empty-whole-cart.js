@@ -21,7 +21,7 @@ module.exports = function () {
     await driver.sleep(3000);
   });
 
-  this.And(/the user click the empty button$/, async function ( ) {
+  this.When(/the user click the empty button$/, async function ( ) {
 
     let Cartbutton = await driver.findElements(By.css('document.querySelector("#selenium--miniCart-empty-cart-btn")'));
     await cartButton.click();
@@ -29,7 +29,7 @@ module.exports = function () {
     await driver.sleep(3000);
   });
   
-  this.And(/the user agree to the popup that assured that the user want to empty the cart$/, async function () {
+  this.When(/the user agree to the popup that assured that the user want to empty the cart$/, async function () {
     let button =await driver.findElements(By.css('document.querySelector("#dialogContent_55 > md-dialog-actions > button.ax-btn-primary.md-button.md-ink-ripple")'));
     await button.click();
     await driver.wait(untill.elementsLocated(By.css('document.querySelector("#dialogContent_55 > md-dialog-actions > button.ax-btn-primary.md-button.md-ink-ripple")')));
