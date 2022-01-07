@@ -30,9 +30,10 @@ module.exports = function () {
   });
 
   this.When(/the user agree to the popup that assures that the user want to empty the cart$/, async function () {
-    let button = await (await driver.findElements(By.css('div[md-ripple-container]')[1]));
-    await driver.wait(until.elementsLocated(By.css('div[md-ripple-container]')));
+    let button = await (await driver.findElement(By.css('button[ng-show="dialog.ok"]')));
+    await driver.wait(until.elementsLocated(By.css('button[ng-show="dialog.ok"]')));
     await button.click();
+    await driver.sleep(10000);
   })
 
 };
