@@ -4,6 +4,7 @@ module.exports = function () {
 
     let allButtons = await driver.findElements
       (By.css('button'));
+
     let plusButton1 = allButtons[15];
     await plusButton1.click();
     await driver.sleep(1000);
@@ -15,8 +16,9 @@ module.exports = function () {
   });
 
   this.When(/^the user clicks the cart button$/, async function () {
+
     await driver.wait(until.elementsLocated
-      (By.css('button[class*="ax-btn-fab"]')),10000);
+      (By.css('button[class*="ax-btn-fab"]')), 10000);
     let cartButton = await driver.findElement
       (By.css('button[class*="ax-btn-fab"]'));
     await cartButton.click();
@@ -24,8 +26,9 @@ module.exports = function () {
   });
 
   this.When(/^the user click the empty button$/, async function () {
+
     await driver.wait(until.elementsLocated
-      (By.css('button[ax-analytics2-action="MiniCart_CleanCart"]')),10000);
+      (By.css('button[ax-analytics2-action="MiniCart_CleanCart"]')), 10000);
     let emptyButton = await driver.findElement
       (By.css('button[ax-analytics2-action="MiniCart_CleanCart"]'));
     await emptyButton.click();
@@ -33,8 +36,9 @@ module.exports = function () {
   });
 
   this.When(/^the user agree to the popup that assures that the user want to empty the cart$/, async function () {
+
     await driver.wait(until.elementsLocated
-      (By.css('button[ng-show="dialog.ok"]')),10000);
+      (By.css('button[ng-show="dialog.ok"]')), 10000);
     let button = await (await driver.findElement
       (By.css('button[ng-show="dialog.ok"]')));
     await button.click();
@@ -42,9 +46,11 @@ module.exports = function () {
   })
 
   this.When(/^the cart should be emptied$/, async function () {
+
     await driver.wait(until.elementsLocated
-      (by.css('h3[class="selenium--miniCart-empty-text"]')),10000)
+      (by.css('h3[class="selenium--miniCart-empty-text"]')), 10000);
     let checkCartView = (await driver.findElement
       (By.css('h3[class="selenium--miniCart-empty-text"]')).getText());
     expect(checkCartView).to.be.equal('Din varukorg är tom!');
-});}
+  });
+}
