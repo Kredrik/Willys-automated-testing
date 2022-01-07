@@ -18,15 +18,20 @@ module.exports = function () {
     products = await driver.findElements(by.css('[itemtype="https://schema.org/Product"]'));
 
     let baguette;
+    let numberOfBaguettes = 5;
     for (let product of products) {
       baguette = (await product.getText()).includes('Baguette Hel');
       await driver.sleep(1000);
       if (baguette) {
-        for (i = 0; i < 5; i++) {
+        for (i = 0; i < numberOfBaguettes; i++) {
           let plusIcon = await (await product.findElement(by.css('button[title="Öka antal"]')));
           await plusIcon.click();
           driver.sleep(700);
         }
+        let price =
+          +((await (await product.findElement(by.css('div[class*="PriceLabel"]')))
+            .getText()).split('\n').join('.').split('./st').join(''));
+        console.log('Priset:', (price * numberOfBaguettes));
         break;
       }
     }
@@ -41,7 +46,10 @@ module.exports = function () {
 
 
   this.Then(/^the user see that the cart shows the correct total price$/, async function () {
+
+    //Gör egen beräkning
     await driver.sleep(3000);
+    //Hämta data från kundvagnen
   });
 
 };
