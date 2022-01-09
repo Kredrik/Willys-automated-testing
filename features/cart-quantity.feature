@@ -13,8 +13,9 @@ Feature: Cart quantity
     When the user clicks the plus icon next to the product in the cart
     Then the amount of the specific product should increase
 
-  Scenario: Decreasing the quantity of a product in the cart
-    Given that there are products in the cart
-    And the user have clicked the cart button
-    When the user clicks the minus icon next to the product in the cart
-    Then the amount of the specific product should decrease
+# Scenario: Decreasing the quantity of a product in the cart
+#   Given that there are products in the cart
+#   And the user have clicked the cart button
+#   When the user clicks the minus icon next to the product in the cart
+#   Then the amount of the specific product should decrease
+#   mark all green lines and "ctrl+k" and "u" to uncomment + delete this line
