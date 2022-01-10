@@ -1,12 +1,12 @@
 [
   {
-    "description": "  As a user I want to click on a product to receive more details about it.",
+    "description": "  As a user I want to be able to change the amount of a product in my cart so\n  that I can buy more or less of that product.",
     "elements": [
       {
-        "id": "view-product-page;click-a-specific-product-to-view-the-detailed-product-page",
+        "id": "cart-quantity;increasing-the-quantity-of-a-product-in-the-cart",
         "keyword": "Scenario",
-        "line": 9,
-        "name": "Click a specific product to view the detailed product page",
+        "line": 10,
+        "name": "Increasing the quantity of a product in the cart",
         "steps": [
           {
             "arguments": [],
@@ -14,11 +14,11 @@
             "name": "that we are on Willy's website",
             "result": {
               "status": "passed",
-              "duration": 2290870800
+              "duration": 1888078600
             },
-            "line": 5,
+            "line": 6,
             "match": {
-              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
             }
           },
           {
@@ -27,71 +27,201 @@
             "name": "that we accepted the standard cookie policy",
             "result": {
               "status": "passed",
-              "duration": 3884224300
+              "duration": 3867381700
             },
-            "line": 6,
+            "line": 7,
             "match": {
-              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "name": "that we have have been through the initial where to deliver popup",
+            "name": "that we have been through the initial where to deliver popup",
             "result": {
               "status": "passed",
-              "duration": 5350856100
+              "duration": 5393144600
             },
-            "line": 7,
+            "line": 8,
             "match": {
-              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:28"
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:28"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that there are products in the cart to change",
+            "result": {
+              "status": "passed",
+              "duration": 2176931800
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user have clicked the cart button",
+            "result": {
+              "status": "passed",
+              "duration": 2111342600
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:16"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "the user clicks on a product",
+            "name": "the user clicks the plus icon next to the product in the cart",
             "result": {
               "status": "passed",
-              "duration": 190969700
+              "duration": 2142827800
             },
-            "line": 10,
+            "line": 13,
             "match": {
-              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\view-product-page.js:3"
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:27"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "the user should be shown an overview of the product and different tabs",
+            "name": "the amount of the specific product should increase",
             "result": {
               "status": "passed",
-              "duration": 5060322800
+              "duration": 41626700
             },
-            "line": 11,
+            "line": 14,
             "match": {
-              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\view-product-page.js:9"
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:50"
             }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "the user clicks the övrigt-tab to view other information about the product",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4181309500
+              "duration": 4231793000
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Decreasing the quantity of a product in the cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 1660115200
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 3767832200
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5345159800
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:28"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that there are products in the cart to change",
+            "result": {
+              "status": "passed",
+              "duration": 2179445500
+            },
+            "line": 17,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user have clicked the cart button",
+            "result": {
+              "status": "passed",
+              "duration": 2113488000
+            },
+            "line": 18,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:16"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks the minus icon next to the product in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 2079260400
+            },
+            "line": 19,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:39"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the amount of the specific product should decrease",
+            "result": {
+              "status": "passed",
+              "duration": 40238100
+            },
+            "line": 20,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:59"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 4236914000
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -99,11 +229,11 @@
         "type": "scenario"
       }
     ],
-    "id": "view-product-page",
+    "id": "cart-quantity",
     "keyword": "Feature",
     "line": 1,
-    "name": "View Product Page",
+    "name": "Cart quantity",
     "tags": [],
-    "uri": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\features\\view-product-page.feature"
+    "uri": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\features\\cart-quantity.feature"
   }
 ]
