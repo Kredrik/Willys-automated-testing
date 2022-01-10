@@ -26,7 +26,7 @@ module.exports = function () {
           let plusIcon = await (await driver.findElement
             (by.css('button[title="Öka antal"]')));
           await plusIcon.click();
-          await driver.sleep(500);
+          await driver.sleep(1000);
         }
         let miniCart = (await driver.findElement
           (by.css('button[class*="MiniCartButton"]')));
