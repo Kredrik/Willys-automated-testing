@@ -10,5 +10,5 @@ Feature: Adding multiple products
   #Ingredienser: Baguette, smör, tonfisk, majonäs, ruccola, tomat
   Scenario: Use the search function to add multiple products to the cart
     When the user uses the search function
-    And adds "Baguette Hel", "Bregott", "Tonfisk i Olja Msc", "Lättmajonnäs", "Ruccola Ekologisk Klass 1", "Tomater Cocktail Klass 1" to the cart
+    And adds "Baguette Hel", "Bregott Extrasaltat 75%", "Tonfisk i Olja Msc", "Lättmajonnäs", "Ruccola Ekologisk Klass 1", "Tomater Cocktail Klass 1" to the cart
     Then the user should have multiple products in the cart
