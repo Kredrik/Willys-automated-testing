@@ -8,14 +8,13 @@ Feature: Cart quantity
     And that we have been through the initial where to deliver popup
 
   Scenario: Increasing the quantity of a product in the cart
-    Given that there are products in the cart
+    Given that there are products in the cart to change
     And the user have clicked the cart button
     When the user clicks the plus icon next to the product in the cart
     Then the amount of the specific product should increase
 
-# Scenario: Decreasing the quantity of a product in the cart
-#   Given that there are products in the cart
-#   And the user have clicked the cart button
-#   When the user clicks the minus icon next to the product in the cart
-#   Then the amount of the specific product should decrease
-#   mark all green lines and "ctrl+k" and "u" to uncomment + delete this line
+  Scenario: Decreasing the quantity of a product in the cart
+    Given that there are products in the cart to change
+    And the user have clicked the cart button
+    When the user clicks the minus icon next to the product in the cart
+    Then the amount of the specific product should decrease

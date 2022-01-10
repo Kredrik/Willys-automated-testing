@@ -1,23 +1,13 @@
 module.exports = function () {
 
   this.Given(/^that there are products in the cart to change$/, async function () {
-
-    let showMoreButton = await driver.findElement
-      (By.css('div[class="ax-has-more-btn"]'));
-    await showMoreButton.click(2000);
-
-    await driver.executeScript
-      ('document.querySelector(\'div[class="ax-has-more-btn"]\').scrollIntoView()');
-
     let addButtons = await driver.findElements
       (By.css('button'));
-    let addButton1 = addButtons[103];
+    let addButton1 = addButtons[12];
     await addButton1.click();
-    await driver.sleep(1000);
 
-    let addButton2 = addButtons[109];
+    let addButton2 = addButtons[18];
     await addButton2.click();
-    await driver.sleep(1000);
 
   });
 
@@ -33,17 +23,42 @@ module.exports = function () {
 
   this.When(/^the user clicks the plus icon next to the product in the cart$/,
     async function () {
-
-      // let increaseButtons = await driver.findElements(By.css('button'));
-      // let increaseButton = increaseButtons[178];
-      // await driver.sleep(2000);
-      // await increaseButton.click();
-      // await driver.sleep(2000);
-
-      await driver.wait(until.elementsLocated(By.css('button[class*="add-to-cart-btn"]')), 10000);
-      let increaseButton = await driver.findElement(By.css('button[class*="add-to-cart-btn"]'));
-      await increaseButton.click();
+      await driver.wait(until.elementsLocated
+        (By.css('div.col-quantity button[aria-label*="Lägg till"]')));
+      let increaseButtons = await driver.findElements
+        (By.css('div.col-quantity button[aria-label*="Lägg till"]'));
+      await increaseButtons[0].click();
+      await increaseButtons[1].click();
+      await driver.sleep(1500)
 
     });
 
+  this.When(/^the user clicks the minus icon next to the product in the cart$/,
+    async function () {
+      await driver.wait(until.elementsLocated
+        (By.css('div.col-quantity button[aria-label*="Ta bort"]')));
+      let decreaseButtons = await driver.findElements
+        (By.css('div.col-quantity button[aria-label*="Ta bort"]'));
+      await decreaseButtons[0].click();
+      await driver.sleep(1500)
+
+    });
+
+  this.Then(/^the amount of the specific product should increase$/,
+    async function () {
+      await driver.wait(until.elementsLocated
+        (By.css('span[class="total"]')));
+      let quantityCheck = await driver.findElement
+        (By.css('span[class="total"]')).getText();
+      expect(quantityCheck).to.be.equal("Totalt (4)")
+    });
+
+  this.Then(/^the amount of the specific product should decrease$/,
+    async function () {
+      await driver.wait(until.elementsLocated
+        (By.css('span[class="total"]')));
+      let quantityCheck = await driver.findElement
+        (By.css('span[class="total"]')).getText();
+      expect(quantityCheck).to.be.equal("Totalt (1)")
+    });
 }
