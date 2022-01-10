@@ -5,11 +5,9 @@ module.exports = function () {
       (By.css('button'));
     let addButton1 = addButtons[12];
     await addButton1.click();
-    await driver.sleep(1000);
 
     let addButton2 = addButtons[18];
     await addButton2.click();
-    await driver.sleep(1000);
 
   });
 
@@ -20,7 +18,6 @@ module.exports = function () {
       let cartButton = await driver.findElement
         (By.css('button[class*="ax-btn-fab"]'));
       await cartButton.click();
-      await driver.sleep(2000);
 
     });
 
@@ -32,7 +29,7 @@ module.exports = function () {
         (By.css('div.col-quantity button[aria-label*="Lägg till"]'));
       await increaseButtons[0].click();
       await increaseButtons[1].click();
-      await driver.sleep(2000);
+      await driver.sleep(1500)
 
     });
 
@@ -43,7 +40,7 @@ module.exports = function () {
       let decreaseButtons = await driver.findElements
         (By.css('div.col-quantity button[aria-label*="Ta bort"]'));
       await decreaseButtons[0].click();
-      await driver.sleep(2000);
+      await driver.sleep(1500)
 
     });
 
