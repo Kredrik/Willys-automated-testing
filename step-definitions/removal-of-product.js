@@ -24,13 +24,10 @@ module.exports = function () {
   });
 
   this.When(/^the user change the amount to "([^"]*)" for the specific product$/, async function (word) {
-    //Förbättring: Kan försöka peka på enbart knappar 
-    //för produkten istället för alla
-    let allInputs = await driver.findElements
-      (By.css('input'));
-    let changeBoxNr = allInputs[29]
-    await changeBoxNr.click();
-    await changeBoxNr.sendKeys(word), 1000;
+    let cartQuantityInput = await driver.findElements
+      (By.css('div.col-quantity input[name="quantity"]'));
+    await cartQuantityInput[0].click();
+    await cartQuantityInput[0].sendKeys(word), 1000;
 
   });
 
