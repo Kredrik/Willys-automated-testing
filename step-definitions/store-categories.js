@@ -1,4 +1,5 @@
 
+//let baguette; wtf
 module.exports = function () {
 
   this.When(/^The user click on the category Bröd & Kakor$/, async function () {
@@ -32,5 +33,4 @@ module.exports = function () {
       await driver.sleep(500);
     }
   });
-  //let baguette;
 }

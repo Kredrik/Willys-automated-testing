@@ -21,7 +21,8 @@ module.exports = function () {
 
   this.Given(/^that there are products in the cart$/, async function () {
 
-    products = await driver.findElements(by.css('[itemtype="https://schema.org/Product"]'));
+    products = await driver.findElements
+      (by.css('[itemtype="https://schema.org/Product"]'));
 
     let baguette;
     let quantity = 5;
@@ -30,7 +31,8 @@ module.exports = function () {
       await driver.sleep(500);
       if (baguette) {
         for (i = 0; i < quantity; i++) {
-          let plusIcon = await (await product.findElement(by.css('button[title="Öka antal"]')));
+          let plusIcon = await (await product.findElement
+            (by.css('button[title="Öka antal"]')));
           await plusIcon.click();
           driver.sleep(500);
         }
@@ -38,14 +40,14 @@ module.exports = function () {
           +((await (await product.findElement
             (by.css('div[class*="PriceLabel"]')))
             .getText()).split('\n').join('.').split('./st').join(''));
-        console.log('Priset:', (price * quantity));
         break;
       }
     }
 
   });
   this.Given(/^the user press the cart button$/, async function () {
-    let miniCart = (await driver.findElement(by.css('button[class*="MiniCartButton"]')));
+    let miniCart = (await driver.findElement
+      (by.css('button[class*="MiniCartButton"]')));
     await miniCart.click();
 
   });
@@ -53,15 +55,16 @@ module.exports = function () {
 
   this.Then(/^the user see that the cart shows the correct total price$/, async function () {
 
-    await driver.wait(until.elementsLocated(by.css('p[class*="price"]')));
+    await driver.wait(until.elementsLocated
+      (by.css('p[class*="price"]')));
     let cartPrice =
       +((await (await driver.findElement
         (by.css('p[class*="price"]')))
         .getText()).split(',').join('.').split(' kr').join(''));
 
     let totalQuantity = (await (await driver.findElement
-      (by.css('input[class*="CartQuantity"]')))
-      .getAttribute("value"));
+      (by.css('input[class*="CartQuantity"]'))).
+      getAttribute("value"));
 
     totalQuantity = +totalQuantity.substring(0, totalQuantity.length - 3);
 

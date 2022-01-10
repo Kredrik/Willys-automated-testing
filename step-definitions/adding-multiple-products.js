@@ -42,7 +42,3 @@ module.exports = function () {
     expect(checkCartView).to.be.equal(ingredients.length);
   });
 };
-
-//Skapa en array med alla ingredienser
-//Gå igenom med en loop: Sök och lägg till produkten i vagnen
-//Söktagg: ('input[placeholder="Sök i e-handeln"]')

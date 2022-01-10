@@ -1,6 +1,8 @@
 module.exports = function () {
 
   this.Given(/^that there are products in the cart to change$/, async function () {
+    //Förbättring: Kan försöka peka på enbart knappar 
+    //för produkten istället för alla
     let addButtons = await driver.findElements
       (By.css('button'));
     let addButton1 = addButtons[12];

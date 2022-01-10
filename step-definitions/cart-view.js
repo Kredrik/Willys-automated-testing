@@ -33,10 +33,17 @@ module.exports = function () {
     for (let product of products) {
       await driver.sleep(750);
 
-      let productStrawberry = (await product.getText()).includes('Jordgubbar Klass 1');
-      let productBlueberry = (await product.getText()).includes('Blåbär Klass 1');
-      let productRaspberry = (await product.getText()).includes('Hallon Klass 1');
-      if (!productStrawberry && !productBlueberry && !productRaspberry) { continue }
+      let productStrawberry =
+        (await product.getText()).includes('Jordgubbar Klass 1');
+      let productBlueberry =
+        (await product.getText()).includes('Blåbär Klass 1');
+      let productRaspberry =
+        (await product.getText()).includes('Hallon Klass 1');
+
+      if (
+        !productStrawberry &&
+        !productBlueberry &&
+        !productRaspberry) { continue }
 
       await driver.wait(until.elementsLocated
         (By.css('button[title="Öka antal"]')), 10000);
@@ -76,7 +83,5 @@ module.exports = function () {
     let checkOut = (await driver.findElement(
       By.css('span[class="checkout-button-text"]')));
     await checkOut.click();
-
   });
-
 };
