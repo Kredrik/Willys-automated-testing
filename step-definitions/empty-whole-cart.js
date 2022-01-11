@@ -14,6 +14,7 @@ module.exports = function () {
       (by.css('div.ax-product-quantity-instock button[aria-label^="Lägg till"]')));
     await addButtons[1].click();
     await slowDown();
+
   });
 
   this.When(/^the user clicks the cart button$/, async function () {
@@ -24,7 +25,7 @@ module.exports = function () {
       (By.css('button[class*="ax-btn-fab"]'));
     await cartButton.click();
     await slowDown();
-
+    await driver.sleep(1000)
 
   });
 
