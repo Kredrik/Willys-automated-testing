@@ -53,8 +53,14 @@ module.exports = function () {
     async function () {
       await driver.wait(until.elementsLocated
         (By.css('span[class="total"]')));
-      let quantityCheck = await driver.findElement
-        (By.css('span[class="total"]')).getText();
+
+      let quantityCheck;
+      while (quantityCheck !== "Totalt (4)") {
+        quantityCheck = await driver.findElement
+          (By.css('span[class="total"]')).getText();
+        await driver.sleep(200);
+        console.log(quantityCheck);
+      }
       expect(quantityCheck).to.be.equal("Totalt (4)")
       await slowDown();
     });
@@ -63,8 +69,14 @@ module.exports = function () {
     async function () {
       await driver.wait(until.elementsLocated
         (By.css('span[class="total"]')));
-      let quantityCheck = await driver.findElement
-        (By.css('span[class="total"]')).getText();
+
+      let quantityCheck;
+      while (quantityCheck !== "Totalt (1)") {
+        quantityCheck = await driver.findElement
+          (By.css('span[class="total"]')).getText();
+        await driver.sleep(200);
+        console.log(quantityCheck);
+      }
       expect(quantityCheck).to.be.equal("Totalt (1)")
       await slowDown();
     });
