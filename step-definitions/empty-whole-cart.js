@@ -1,6 +1,9 @@
+const slowDown = require('./sleep.js');
 module.exports = function () {
 
+
   this.Given(/^that there is at least 1 product in the cart$/, async function () {
+
     //Förbättring: Kan försöka peka på enbart knappar 
     //för produkten istället för alla
     let allButtons = await driver.findElements
@@ -13,6 +16,7 @@ module.exports = function () {
     let plusButton2 = allButtons[18];
     await plusButton2.click();
     await driver.sleep(1000);
+    await slowDown();
 
   });
 
@@ -23,6 +27,8 @@ module.exports = function () {
     let cartButton = await driver.findElement
       (By.css('button[class*="ax-btn-fab"]'));
     await cartButton.click();
+    await slowDown();
+
 
   });
 
@@ -33,6 +39,7 @@ module.exports = function () {
     let emptyButton = await driver.findElement
       (By.css('button[ax-analytics2-action="MiniCart_CleanCart"]'));
     await emptyButton.click();
+    await slowDown();
 
   });
 
@@ -43,6 +50,7 @@ module.exports = function () {
     let button = await (await driver.findElement
       (By.css('button[ng-show="dialog.ok"]')));
     await button.click();
+    await slowDown();
 
   })
 
@@ -53,5 +61,6 @@ module.exports = function () {
     let checkCartView = (await driver.findElement
       (By.css('h3[class="selenium--miniCart-empty-text"]')).getText());
     expect(checkCartView).to.be.equal('Din varukorg är tom!');
+    await slowDown();
   });
 }
