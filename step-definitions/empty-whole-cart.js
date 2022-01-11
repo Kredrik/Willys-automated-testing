@@ -25,7 +25,7 @@ module.exports = function () {
       (By.css('button[class*="ax-btn-fab"]'));
     await cartButton.click();
     await slowDown();
-    await driver.sleep(1000)
+    await driver.sleep(1000);
 
   });
 

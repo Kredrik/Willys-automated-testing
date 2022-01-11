@@ -34,7 +34,7 @@ module.exports = function () {
       (By.css('[itemtype="https://schema.org/Product"]'));
 
     for (let product of products) {
-      await driver.sleep(750);
+      await driver.sleep(1000);
 
       let productStrawberry =
         (await product.getText()).includes('Jordgubbar Klass 1');
