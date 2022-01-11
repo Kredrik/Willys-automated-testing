@@ -1,16 +1,18 @@
+const slowDown = require('./sleep.js');
+
 module.exports = function () {
 
   this.Given(/^that there are products in the cart to change$/, async function () {
-    //Förbättring: Kan försöka peka på enbart knappar 
-    //för produkten istället för alla
+    await driver.wait(until.elementsLocated
+      (by.css('div.ax-product-quantity-instock button[aria-label^="Lägg till"]')));
     let addButtons = await driver.findElements
-      (By.css('button'));
-    let addButton1 = addButtons[12];
-    await addButton1.click();
-
-    let addButton2 = addButtons[18];
-    await addButton2.click();
-
+      (By.css('div.ax-product-quantity-instock button[aria-label^="Lägg till"]'));
+    await addButtons[0].click();
+    await slowDown();
+    await driver.wait(until.elementsLocated
+      (by.css('div.ax-product-quantity-instock button[aria-label^="Lägg till"]')));
+    await addButtons[1].click();
+    await slowDown();
   });
 
   this.Given(/^the user have clicked the cart button$/,
@@ -31,7 +33,7 @@ module.exports = function () {
         (By.css('div.col-quantity button[aria-label*="Lägg till"]'));
       await increaseButtons[0].click();
       await increaseButtons[1].click();
-      await driver.sleep(1500)
+      await slowDown();
 
     });
 
@@ -42,7 +44,7 @@ module.exports = function () {
       let decreaseButtons = await driver.findElements
         (By.css('div.col-quantity button[aria-label*="Ta bort"]'));
       await decreaseButtons[0].click();
-      await driver.sleep(1500)
+      await slowDown();
 
     });
 
@@ -53,6 +55,7 @@ module.exports = function () {
       let quantityCheck = await driver.findElement
         (By.css('span[class="total"]')).getText();
       expect(quantityCheck).to.be.equal("Totalt (4)")
+      await slowDown();
     });
 
   this.Then(/^the amount of the specific product should decrease$/,
@@ -62,5 +65,6 @@ module.exports = function () {
       let quantityCheck = await driver.findElement
         (By.css('span[class="total"]')).getText();
       expect(quantityCheck).to.be.equal("Totalt (1)")
+      await slowDown();
     });
 }

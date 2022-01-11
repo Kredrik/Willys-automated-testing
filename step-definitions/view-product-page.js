@@ -1,3 +1,5 @@
+const slowDown = require('./sleep.js');
+
 module.exports = function () {
 
   this.When(/^the user clicks on a product$/, async function () {
@@ -26,13 +28,13 @@ module.exports = function () {
       (by.css('div[ax-analytics2-action="ProductPage_ProductInfo_OtherInfo"]')), 10000);
     let otherInfoTab = await driver.findElement
       (by.css('div[ax-analytics2-action="ProductPage_ProductInfo_OtherInfo"]'));
-
+    await slowDown();
     await otherInfoTab.click();
     await driver.wait(until.elementsLocated
       (by.css('div[class*="info-block storage"]')));
     let otherInfoText = await driver.findElement
       (by.css('div[class*="info-block storage"]')).getText();
     expect(otherInfoText).to.not.equal(null);
-    await driver.sleep(5000);
+    await slowDown();
   })
 }

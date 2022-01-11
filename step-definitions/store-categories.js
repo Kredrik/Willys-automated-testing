@@ -1,4 +1,4 @@
-
+const slowDown = require('./sleep.js');
 //let baguette; wtf
 module.exports = function () {
 
@@ -20,6 +20,7 @@ module.exports = function () {
 
     await driver.executeScript
       ('document.querySelector(\'a[href="/sortiment/brod-och-kakor/brod"]\').scrollIntoView()');
+    await slowDown();
     await breadLink.click();
 
   });

@@ -1,3 +1,5 @@
+const slowDown = require('./sleep.js');
+
 module.exports = function () {
 
   let price;
@@ -7,12 +9,11 @@ module.exports = function () {
     let breadAndCookies = await driver.findElement
       (by.css('a[href="/sortiment/brod-och-kakor"]'));
     await breadAndCookies.click();
-
+    await slowDown();
     await driver.wait(until.elementsLocated
       (by.css('a[href="/sortiment/brod-och-kakor/brod"]')), 10000);
     let breadLink = await driver.findElement
       (by.css('a[href="/sortiment/brod-och-kakor/brod"]'));
-
 
     await driver.executeScript
       ('document.querySelector(\'a[href="/sortiment/brod-och-kakor/brod"]\').scrollIntoView()');
@@ -49,7 +50,8 @@ module.exports = function () {
     let miniCart = (await driver.findElement
       (by.css('button[class*="MiniCartButton"]')));
     await miniCart.click();
-
+    await slowDown();
+    await slowDown();
   });
 
 
