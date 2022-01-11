@@ -4,20 +4,16 @@ module.exports = function () {
 
   this.Given(/^that there is at least 1 product in the cart$/, async function () {
 
-    //Förbättring: Kan försöka peka på enbart knappar 
-    //för produkten istället för alla
-    let allButtons = await driver.findElements
-      (By.css('button'));
-
-    let plusButton1 = allButtons[15];
-    await plusButton1.click();
-    await driver.sleep(1000);
-
-    let plusButton2 = allButtons[18];
-    await plusButton2.click();
-    await driver.sleep(1000);
+    await driver.wait(until.elementsLocated
+      (by.css('div.ax-product-quantity-instock button[aria-label^="Lägg till"]')));
+    let addButtons = await driver.findElements
+      (By.css('div.ax-product-quantity-instock button[aria-label^="Lägg till"]'));
+    await addButtons[0].click();
     await slowDown();
-
+    await driver.wait(until.elementsLocated
+      (by.css('div.ax-product-quantity-instock button[aria-label^="Lägg till"]')));
+    await addButtons[1].click();
+    await slowDown();
   });
 
   this.When(/^the user clicks the cart button$/, async function () {
