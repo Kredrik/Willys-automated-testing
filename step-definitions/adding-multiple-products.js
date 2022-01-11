@@ -1,5 +1,6 @@
-module.exports = function () {
 
+module.exports = function () {
+  const slowDown = require('./sleep.js');
   let ingredients = [];
   let searchField;
 
@@ -13,21 +14,23 @@ module.exports = function () {
       async function (baguette, butter, tuna, majo, ruccola, tomatoes) {
 
         ingredients.push(baguette, butter, tuna, majo, ruccola, tomatoes);
-
+        let plusIcon;
         for (let ingredient of ingredients) {
           await driver.wait(until.elementsLocated
             (by.css('input[placeholder="Sök i e-handeln"]')), 10000);
           searchField = await driver.findElement
             (by.css('input[placeholder="Sök i e-handeln"]'));
+          await driver.sleep(1000);
           await searchField.sendKeys(ingredient, selenium.Key.ENTER);
+
+          await driver.sleep(2300);
           await driver.wait(until.elementsLocated
             (by.css('button[title="Öka antal"]')), 10000);
-
-          let plusIcon = await (await driver.findElement
+          plusIcon = await (await driver.findElement
             (by.css('button[title="Öka antal"]')));
           await plusIcon.click();
-          await driver.sleep(1000);
         }
+
         let miniCart = (await driver.findElement
           (by.css('button[class*="MiniCartButton"]')));
         await miniCart.click();
@@ -40,5 +43,6 @@ module.exports = function () {
     let checkCartView = +(await driver.findElement
       (By.css('span[class^="MiniCartstyles"')).getText());
     expect(checkCartView).to.be.equal(ingredients.length);
+    await slowDown();
   });
 };
