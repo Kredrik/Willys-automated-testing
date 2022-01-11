@@ -1,3 +1,4 @@
+const slowDown = require('./sleep.js');
 module.exports = function () {
 
   this.Given(/^that there is a product in the cart to remove$/, async function () {
@@ -10,6 +11,7 @@ module.exports = function () {
     let plusButton2 = allButtons[18];
     await plusButton2.click();
 
+    await slowDown();
   });
 
   this.When(/^the user click the cart button$/, async function () {
@@ -21,6 +23,8 @@ module.exports = function () {
     await cartButton.click();
     await driver.sleep(2000);
 
+    await slowDown();
+
   });
 
   this.When(/^the user change the amount to "([^"]*)" for the specific product$/, async function (word) {
@@ -29,6 +33,8 @@ module.exports = function () {
     await cartQuantityInput[0].click();
     await cartQuantityInput[0].sendKeys(word), 1000;
 
+    await slowDown();
+    await slowDown();
   });
 
   this.Then(/^the user hit the small ok button and the specific product should be removed$/, async function () {
@@ -42,5 +48,8 @@ module.exports = function () {
     let quantityCheck = await driver.findElement
       (By.css('span[class="total"]')).getText();
     expect(quantityCheck).to.be.equal("Totalt (1)");
+
+    await slowDown();
+    await slowDown();
   });
 }
