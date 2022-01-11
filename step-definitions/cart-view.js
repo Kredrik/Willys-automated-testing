@@ -1,3 +1,4 @@
+const slowDown = require('./sleep.js');
 module.exports = function () {
 
   this.When(/^the user has selected products and added them to the cart$/, async function () {
@@ -5,6 +6,7 @@ module.exports = function () {
     let fruitsAndGreensMenu = await driver.findElement
       (By.css('a[href="/sortiment/frukt-och-gront"'));
     await fruitsAndGreensMenu.click();
+    await slowDown();
 
     await driver.wait(until.elementsLocated
       (by.css('a[href="/sortiment/frukt-och-gront/farska-bar"')), 10000);
@@ -14,6 +16,7 @@ module.exports = function () {
     await driver.executeScript
       ('document.querySelector(\'a[href="/sortiment/frukt-och-gront/farska-bar"]\').scrollIntoView()');
     await freshBerriesMenu.click();
+    await slowDown();
 
     let h2Text;
     await driver.wait(until.elementsLocated
@@ -40,6 +43,7 @@ module.exports = function () {
       let productRaspberry =
         (await product.getText()).includes('Hallon Klass 1');
 
+
       if (
         !productStrawberry &&
         !productBlueberry &&
@@ -51,7 +55,9 @@ module.exports = function () {
         (By.css('button[title="Öka antal"]')));
       await buyProduct.click();
 
+
     }
+    await slowDown();
 
   })
 
@@ -60,6 +66,7 @@ module.exports = function () {
     let goToCart = (await driver.findElement
       (By.css('a[href="https://www.willys.se/varukorg"]')));
     await goToCart.click();
+    await slowDown();
 
   });
 
@@ -70,6 +77,7 @@ module.exports = function () {
     let checkCartView = (await driver.findElement
       (By.css('span[class^="MiniCartstyles"')).getText());
     expect(checkCartView).to.be.equal('3');
+    await slowDown();
   });
 
   this.Then(/^the user will have the option to buy them$/, async function () {
@@ -77,11 +85,13 @@ module.exports = function () {
     let goToCheckOut = await driver.findElement
       (By.css('a[class*="secondary"]'));
     await goToCheckOut.click();
+    await slowDown();
 
     await driver.wait(until.elementsLocated
       (By.css('span[class="checkout-button-text"]')), 10000);
     let checkOut = (await driver.findElement(
       By.css('span[class="checkout-button-text"]')));
     await checkOut.click();
+    await slowDown();
   });
 };
