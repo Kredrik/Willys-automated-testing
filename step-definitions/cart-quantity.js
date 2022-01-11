@@ -22,6 +22,7 @@ module.exports = function () {
       let cartButton = await driver.findElement
         (By.css('button[class*="ax-btn-fab"]'));
       await cartButton.click();
+      await slowDown();
 
     });
 

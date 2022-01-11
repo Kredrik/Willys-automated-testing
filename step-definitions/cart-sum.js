@@ -44,6 +44,7 @@ module.exports = function () {
         break;
       }
     }
+    await slowDown();
 
   });
   this.Given(/^the user press the cart button$/, async function () {
