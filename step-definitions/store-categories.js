@@ -4,20 +4,18 @@ module.exports = function () {
 
   this.When(/^The user click on the category Bröd & Kakor$/, async function () {
 
+    await driver.executeScript
+      ('document.querySelector(\'a[href="/sortiment/brod-och-kakor"]\').scrollIntoView()');
     let breadAndCookies = await driver.findElement
       (by.css('a[href="/sortiment/brod-och-kakor"]'));
     await breadAndCookies.click();
-    await driver.wait(until.elementsLocated
-      (by.css('a[href="/sortiment/brod-och-kakor/brod"]')), 10000);
   });
 
   this.When(/^click on the sub\-category Bröd$/, async function () {
     await driver.wait(until.elementsLocated
-      (by.css('a[href="/sortiment/brod-och-kakor/brod"]')))
+      (by.css('a[href="/sortiment/brod-och-kakor/brod"]'), 10000))
     let breadLink = await driver.findElement
       (by.css('a[href="/sortiment/brod-och-kakor/brod"]'));
-
-
     await driver.executeScript
       ('document.querySelector(\'a[href="/sortiment/brod-och-kakor/brod"]\').scrollIntoView()');
     await slowDown();

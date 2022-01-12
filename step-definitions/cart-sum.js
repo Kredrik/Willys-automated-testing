@@ -8,6 +8,8 @@ module.exports = function () {
 
     let breadAndCookies = await driver.findElement
       (by.css('a[href="/sortiment/brod-och-kakor"]'));
+    await driver.executeScript
+      ('document.querySelector(\'a[href="/sortiment/brod-och-kakor"]\').scrollIntoView()');
     await breadAndCookies.click();
     await slowDown();
     await driver.wait(until.elementsLocated
