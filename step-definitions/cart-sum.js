@@ -37,7 +37,7 @@ module.exports = function () {
           let plusIcon = await (await product.findElement
             (by.css('button[title="Öka antal"]')));
           await plusIcon.click();
-          driver.sleep(500);
+          await driver.sleep(500);
         }
         price =
           +((await (await product.findElement

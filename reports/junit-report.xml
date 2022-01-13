@@ -1,41 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="xxx;some-scenario" tests="4" failures="0" skipped="1">
+    <testsuite name="adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart" tests="6" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:/Users/F/Documents/GitHub/Willys-automated-test/features/adding-one-or-more-products.feature">
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/adding-multiple-products.feature">
             </property>
         </properties>
-        <testcase name="Given that we are on Willy&apos;s website" classname="xxx;some-scenario" time="2.7095535">
+        <testcase name="Given that we are on Willy&apos;s website" classname="adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart" time="1.8674139">
         </testcase>
-        <testcase name="And that we accepted the standard cookie policy" classname="xxx;some-scenario" time="4.7002358">
+        <testcase name="And that we accepted the standard cookie policy" classname="adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart" time="3.7430551">
         </testcase>
-        <testcase name="And that we have have been through the initial where to deliver popup" classname="xxx;some-scenario" time="5.5476945">
+        <testcase name="And that we have been through the initial where to deliver popup" classname="adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart" time="5.2955935">
         </testcase>
-        <testcase name="Given something I haven&apos;t written yet" classname="xxx;some-scenario">
-            <skipped message="">
-            </skipped>
+        <testcase name="When the user uses the search function" classname="adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart" time="0.0136683">
+        </testcase>
+        <testcase name="And adds &quot;Baguette Hel&quot;, &quot;Bregott Extrasaltat 75%&quot;, &quot;Tonfisk i Olja Msc&quot;, &quot;Lättmajonnäs&quot;, &quot;Ruccola Ekologisk Klass 1&quot;, &quot;Tomater Cocktail Klass 1&quot; to the cart" classname="adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart" time="27.4547812">
+        </testcase>
+        <testcase name="Then the user should have multiple products in the cart" classname="adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart" time="0.1094671">
         </testcase>
     </testsuite>
-    <testsuite name="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" tests="6" failures="0" skipped="2">
+    <testsuite name="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" tests="7" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:/Users/F/Documents/GitHub/Willys-automated-test/features/store-categories.feature">
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/cart-quantity.feature">
             </property>
         </properties>
-        <testcase name="Given that we are on Willy&apos;s website" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="4.2359281">
+        <testcase name="Given that we are on Willy&apos;s website" classname="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" time="1.27609">
         </testcase>
-        <testcase name="And that we accepted the standard cookie policy" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="4.6233963">
+        <testcase name="And that we accepted the standard cookie policy" classname="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" time="3.7942998">
         </testcase>
-        <testcase name="And that we have have been through the initial where to deliver popup" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="5.5066857">
+        <testcase name="And that we have been through the initial where to deliver popup" classname="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" time="5.2933457">
         </testcase>
-        <testcase name="When I click on the category Skafferi" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products" time="0.0001874">
+        <testcase name="Given that there are products in the cart to change" classname="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" time="0.2240155">
         </testcase>
-        <testcase name="Then I should be directed to the Skafferi category page" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products">
-            <skipped message="">
-            </skipped>
+        <testcase name="And the user have clicked the cart button" classname="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" time="0.1494208">
         </testcase>
-        <testcase name="And the products for the category should be visible" classname="store-categories;select-the-&quot;skafferi&quot;-category-to-see-if-it-contains-products">
-            <skipped message="">
-            </skipped>
+        <testcase name="When the user clicks the plus icon next to the product in the cart" classname="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" time="1.0957618">
+        </testcase>
+        <testcase name="Then the amount of the specific product should increase" classname="cart-quantity;increasing-the-quantity-of-a-product-in-the-cart" time="1.5876838">
+        </testcase>
+    </testsuite>
+    <testsuite name="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" tests="7" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/cart-quantity.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" time="1.613888">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" time="3.9615487">
+        </testcase>
+        <testcase name="And that we have been through the initial where to deliver popup" classname="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" time="5.3260846">
+        </testcase>
+        <testcase name="Given that there are products in the cart to change" classname="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" time="0.1794415">
+        </testcase>
+        <testcase name="And the user have clicked the cart button" classname="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" time="0.1463458">
+        </testcase>
+        <testcase name="When the user clicks the minus icon next to the product in the cart" classname="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" time="1.0833975">
+        </testcase>
+        <testcase name="Then the amount of the specific product should decrease" classname="cart-quantity;decreasing-the-quantity-of-a-product-in-the-cart" time="1.3369127">
+        </testcase>
+    </testsuite>
+    <testsuite name="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" tests="7" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/cart-sum.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" time="2.0261301">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" time="3.5104462">
+        </testcase>
+        <testcase name="And that we have been through the initial where to deliver popup" classname="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" time="5.3835526">
+        </testcase>
+        <testcase name="Given that we are on the Bröd category" classname="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" time="2.030498">
+        </testcase>
+        <testcase name="And that there are products in the cart" classname="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" time="5.9777665">
+        </testcase>
+        <testcase name="And the user press the cart button" classname="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" time="0.1649896">
+        </testcase>
+        <testcase name="Then the user see that the cart shows the correct total price" classname="cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly" time="0.2326226">
+        </testcase>
+    </testsuite>
+    <testsuite name="cart-view;select-the-cart-and-view-the-selected-products" tests="7" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/cart-view.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="cart-view;select-the-cart-and-view-the-selected-products" time="1.5406259">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="cart-view;select-the-cart-and-view-the-selected-products" time="3.6487918">
+        </testcase>
+        <testcase name="And that we have been through the initial where to deliver popup" classname="cart-view;select-the-cart-and-view-the-selected-products" time="5.3741646">
+        </testcase>
+        <testcase name="When the user has selected products and added them to the cart" classname="cart-view;select-the-cart-and-view-the-selected-products" time="7.4685114">
+        </testcase>
+        <testcase name="And the user clicks on the cart icon" classname="cart-view;select-the-cart-and-view-the-selected-products" time="0.1339503">
+        </testcase>
+        <testcase name="Then the user should see the selected products" classname="cart-view;select-the-cart-and-view-the-selected-products" time="0.0725208">
+        </testcase>
+        <testcase name="And the user will have the option to buy them" classname="cart-view;select-the-cart-and-view-the-selected-products" time="1.1053644">
+        </testcase>
+    </testsuite>
+    <testsuite name="empty-whole-cart;select-the-cart-and-empty-the-cart" tests="8" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/empty-whole-cart.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="1.4600265">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="3.9270463">
+        </testcase>
+        <testcase name="And that we have been through the initial where to deliver popup" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="5.4149181">
+        </testcase>
+        <testcase name="Given that there is at least 1 product in the cart" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="0.1822948">
+        </testcase>
+        <testcase name="When the user clicks the cart button" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="1.1599898">
+        </testcase>
+        <testcase name="And the user click the empty button" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="0.1555472">
+        </testcase>
+        <testcase name="And the user agree to the popup that assures that the user want to empty the cart" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="0.1422143">
+        </testcase>
+        <testcase name="Then the cart should be emptied" classname="empty-whole-cart;select-the-cart-and-empty-the-cart" time="0.7797749">
+        </testcase>
+    </testsuite>
+    <testsuite name="removal-of-product;select-a-product-and-remove-it" tests="7" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/removal-of-product.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="removal-of-product;select-a-product-and-remove-it" time="1.7792209">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="removal-of-product;select-a-product-and-remove-it" time="3.7166536">
+        </testcase>
+        <testcase name="And that we have been through the initial where to deliver popup" classname="removal-of-product;select-a-product-and-remove-it" time="5.3649363">
+        </testcase>
+        <testcase name="Given that there is a product in the cart to remove" classname="removal-of-product;select-a-product-and-remove-it" time="0.2154894">
+        </testcase>
+        <testcase name="When the user click the cart button" classname="removal-of-product;select-a-product-and-remove-it" time="2.1441422">
+        </testcase>
+        <testcase name="And the user change the amount to &quot;0&quot; for the specific product" classname="removal-of-product;select-a-product-and-remove-it" time="0.1764797">
+        </testcase>
+        <testcase name="Then the user hit the small ok button and the specific product should be removed" classname="removal-of-product;select-a-product-and-remove-it" time="1.7541483">
+        </testcase>
+    </testsuite>
+    <testsuite name="store-categories;select-the-bröd-category-to-see-if-it-contains-products" tests="6" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/store-categories.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="store-categories;select-the-bröd-category-to-see-if-it-contains-products" time="1.5169051">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="store-categories;select-the-bröd-category-to-see-if-it-contains-products" time="4.4630342">
+        </testcase>
+        <testcase name="And that we have been through the initial where to deliver popup" classname="store-categories;select-the-bröd-category-to-see-if-it-contains-products" time="5.3801121">
+        </testcase>
+        <testcase name="When The user click on the category Bröd &amp; Kakor" classname="store-categories;select-the-bröd-category-to-see-if-it-contains-products" time="1.8991066">
+        </testcase>
+        <testcase name="And click on the sub-category Bröd" classname="store-categories;select-the-bröd-category-to-see-if-it-contains-products" time="0.2812082">
+        </testcase>
+        <testcase name="Then I should be directed to the Bröd category page" classname="store-categories;select-the-bröd-category-to-see-if-it-contains-products" time="1.3579737">
+        </testcase>
+    </testsuite>
+    <testsuite name="view-product-page;click-a-specific-product-to-view-the-detailed-product-page" tests="6" failures="0" skipped="0">
+        <properties>
+            <property name="URI" value="C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/view-product-page.feature">
+            </property>
+        </properties>
+        <testcase name="Given that we are on Willy&apos;s website" classname="view-product-page;click-a-specific-product-to-view-the-detailed-product-page" time="1.7140173">
+        </testcase>
+        <testcase name="And that we accepted the standard cookie policy" classname="view-product-page;click-a-specific-product-to-view-the-detailed-product-page" time="3.8920595">
+        </testcase>
+        <testcase name="And that we have been through the initial where to deliver popup" classname="view-product-page;click-a-specific-product-to-view-the-detailed-product-page" time="5.376109">
+        </testcase>
+        <testcase name="When the user clicks on a product" classname="view-product-page;click-a-specific-product-to-view-the-detailed-product-page" time="0.2278589">
+        </testcase>
+        <testcase name="Then the user should be shown an overview of the product and different tabs" classname="view-product-page;click-a-specific-product-to-view-the-detailed-product-page" time="0.5556361">
+        </testcase>
+        <testcase name="And the user clicks the other info-tab to view other information about the product" classname="view-product-page;click-a-specific-product-to-view-the-detailed-product-page" time="0.4208289">
         </testcase>
     </testsuite>
 </testsuites>

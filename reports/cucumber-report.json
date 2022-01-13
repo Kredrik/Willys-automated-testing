@@ -1,5 +1,116 @@
 [
   {
+    "description": "  As a user I want to be able to add multiple items to the cart.",
+    "elements": [
+      {
+        "id": "adding-multiple-products;use-the-search-function-to-add-multiple-products-to-the-cart",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Use the search function to add multiple products to the cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 1867413900
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 3743055100
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5295593500
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user uses the search function",
+            "result": {
+              "status": "passed",
+              "duration": 13668300
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\adding-multiple-products.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "adds \"Baguette Hel\", \"Bregott Extrasaltat 75%\", \"Tonfisk i Olja Msc\", \"Lättmajonnäs\", \"Ruccola Ekologisk Klass 1\", \"Tomater Cocktail Klass 1\" to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 27454781200
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\adding-multiple-products.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the user should have multiple products in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 109467100
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\adding-multiple-products.js:40"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 265370000
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "adding-multiple-products",
+    "keyword": "Feature",
+    "line": 2,
+    "name": "Adding multiple products",
+    "tags": [],
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/adding-multiple-products.feature"
+  },
+  {
     "description": "  As a user I want to be able to change the amount of a product in my cart so\n  that I can buy more or less of that product.",
     "elements": [
       {
@@ -14,11 +125,11 @@
             "name": "that we are on Willy's website",
             "result": {
               "status": "passed",
-              "duration": 1888078600
+              "duration": 1276090000
             },
             "line": 6,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
             }
           },
           {
@@ -27,11 +138,11 @@
             "name": "that we accepted the standard cookie policy",
             "result": {
               "status": "passed",
-              "duration": 3867381700
+              "duration": 3794299800
             },
             "line": 7,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
             }
           },
           {
@@ -40,11 +151,11 @@
             "name": "that we have been through the initial where to deliver popup",
             "result": {
               "status": "passed",
-              "duration": 5393144600
+              "duration": 5293345700
             },
             "line": 8,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:28"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
             }
           },
           {
@@ -53,11 +164,11 @@
             "name": "that there are products in the cart to change",
             "result": {
               "status": "passed",
-              "duration": 2176931800
+              "duration": 224015500
             },
             "line": 11,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:3"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:5"
             }
           },
           {
@@ -66,11 +177,11 @@
             "name": "the user have clicked the cart button",
             "result": {
               "status": "passed",
-              "duration": 2111342600
+              "duration": 149420800
             },
             "line": 12,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:16"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:18"
             }
           },
           {
@@ -79,11 +190,11 @@
             "name": "the user clicks the plus icon next to the product in the cart",
             "result": {
               "status": "passed",
-              "duration": 2142827800
+              "duration": 1095761800
             },
             "line": 13,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:27"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:29"
             }
           },
           {
@@ -92,11 +203,11 @@
             "name": "the amount of the specific product should increase",
             "result": {
               "status": "passed",
-              "duration": 41626700
+              "duration": 1587683800
             },
             "line": 14,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:50"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:52"
             }
           },
           {
@@ -104,11 +215,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4231793000
+              "duration": 282427200
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -127,11 +238,11 @@
             "name": "that we are on Willy's website",
             "result": {
               "status": "passed",
-              "duration": 1660115200
+              "duration": 1613888000
             },
             "line": 6,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
             }
           },
           {
@@ -140,11 +251,11 @@
             "name": "that we accepted the standard cookie policy",
             "result": {
               "status": "passed",
-              "duration": 3767832200
+              "duration": 3961548700
             },
             "line": 7,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
             }
           },
           {
@@ -153,11 +264,11 @@
             "name": "that we have been through the initial where to deliver popup",
             "result": {
               "status": "passed",
-              "duration": 5345159800
+              "duration": 5326084600
             },
             "line": 8,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:28"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
             }
           },
           {
@@ -166,11 +277,11 @@
             "name": "that there are products in the cart to change",
             "result": {
               "status": "passed",
-              "duration": 2179445500
+              "duration": 179441500
             },
             "line": 17,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:3"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:5"
             }
           },
           {
@@ -179,11 +290,11 @@
             "name": "the user have clicked the cart button",
             "result": {
               "status": "passed",
-              "duration": 2113488000
+              "duration": 146345800
             },
             "line": 18,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:16"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:18"
             }
           },
           {
@@ -192,11 +303,11 @@
             "name": "the user clicks the minus icon next to the product in the cart",
             "result": {
               "status": "passed",
-              "duration": 2079260400
+              "duration": 1083397500
             },
             "line": 19,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:39"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:41"
             }
           },
           {
@@ -205,11 +316,11 @@
             "name": "the amount of the specific product should decrease",
             "result": {
               "status": "passed",
-              "duration": 40238100
+              "duration": 1336912700
             },
             "line": 20,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:59"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-quantity.js:68"
             }
           },
           {
@@ -217,11 +328,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4236914000
+              "duration": 4199155100
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -234,6 +345,737 @@
     "line": 1,
     "name": "Cart quantity",
     "tags": [],
-    "uri": "C:\\Users\\EvilRodge\\source\\repos\\Jensen-programmering\\inlamningsuppgift3\\GitHub\\Willys-automated-testing\\features\\cart-quantity.feature"
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/cart-quantity.feature"
+  },
+  {
+    "description": "\tAs user I want to be able to see that the cart shows and calculate the\n\tcorrect price and that I can see the total price before I choose to buy.",
+    "elements": [
+      {
+        "id": "cart-sum;add-different-bread-products-and-check-the-cart-to-see-if-the-sum-is-calculated-correctly",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Add different bread products and check the cart to see if the sum is calculated correctly",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 2026130100
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 3510446200
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5383552600
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on the Bröd category",
+            "result": {
+              "status": "passed",
+              "duration": 2030498000
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-sum.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that there are products in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 5977766500
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-sum.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user press the cart button",
+            "result": {
+              "status": "passed",
+              "duration": 164989600
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-sum.js:52"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the user see that the cart shows the correct total price",
+            "result": {
+              "status": "passed",
+              "duration": 232622600
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-sum.js:61"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 4190407100
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-sum",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Cart sum",
+    "tags": [],
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/cart-sum.feature"
+  },
+  {
+    "description": "  As a user I want to be able to visit the cart\n  to see the products that have been selected so I can buy them",
+    "elements": [
+      {
+        "id": "cart-view;select-the-cart-and-view-the-selected-products",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Select the cart and view the selected products",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 1540625900
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 3648791800
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5374164600
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user has selected products and added them to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 7468511400
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-view.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user clicks on the cart icon",
+            "result": {
+              "status": "passed",
+              "duration": 133950300
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-view.js:64"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the user should see the selected products",
+            "result": {
+              "status": "passed",
+              "duration": 72520800
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-view.js:73"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user will have the option to buy them",
+            "result": {
+              "status": "passed",
+              "duration": 1105364400
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\cart-view.js:83"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 316011800
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-view",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Cart view",
+    "tags": [],
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/cart-view.feature"
+  },
+  {
+    "description": "  As a user I want to be able to empty my whole cart so that I can start from\n  scratch.",
+    "elements": [
+      {
+        "id": "empty-whole-cart;select-the-cart-and-empty-the-cart",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Select the cart and empty the cart",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 1460026500
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 3927046300
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5414918100
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that there is at least 1 product in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 182294800
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\empty-whole-cart.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks the cart button",
+            "result": {
+              "status": "passed",
+              "duration": 1159989800
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\empty-whole-cart.js:20"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user click the empty button",
+            "result": {
+              "status": "passed",
+              "duration": 155547200
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\empty-whole-cart.js:32"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user agree to the popup that assures that the user want to empty the cart",
+            "result": {
+              "status": "passed",
+              "duration": 142214300
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\empty-whole-cart.js:43"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the cart should be emptied",
+            "result": {
+              "status": "passed",
+              "duration": 779774900
+            },
+            "line": 15,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\empty-whole-cart.js:54"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 4194644500
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "empty-whole-cart",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Empty whole cart",
+    "tags": [],
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/empty-whole-cart.feature"
+  },
+  {
+    "description": "  As as user i want to be able to remove specific items from my cart\n  and see that they are removed properly",
+    "elements": [
+      {
+        "id": "removal-of-product;select-a-product-and-remove-it",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Select a product and remove it",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 1779220900
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 3716653600
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5364936300
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that there is a product in the cart to remove",
+            "result": {
+              "status": "passed",
+              "duration": 215489400
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\removal-of-product.js:4"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user click the cart button",
+            "result": {
+              "status": "passed",
+              "duration": 2144142200
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\removal-of-product.js:17"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user change the amount to \"0\" for the specific product",
+            "result": {
+              "status": "passed",
+              "duration": 176479700
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\removal-of-product.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the user hit the small ok button and the specific product should be removed",
+            "result": {
+              "status": "passed",
+              "duration": 1754148300
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\removal-of-product.js:40"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 4236275100
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "removal-of-product",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Removal of product",
+    "tags": [],
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/removal-of-product.feature"
+  },
+  {
+    "description": "  As as user I want to be able to visit different\n  product categories in order to see the products they contain.",
+    "elements": [
+      {
+        "id": "store-categories;select-the-bröd-category-to-see-if-it-contains-products",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Select the Bröd category to see if it contains products",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 1516905100
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 4463034200
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5380112100
+            },
+            "line": 8,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "The user click on the category Bröd & Kakor",
+            "result": {
+              "status": "passed",
+              "duration": 1899106600
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\store-categories.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "click on the sub-category Bröd",
+            "result": {
+              "status": "passed",
+              "duration": 281208200
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\store-categories.js:14"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be directed to the Bröd category page",
+            "result": {
+              "status": "passed",
+              "duration": 1357973700
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\store-categories.js:26"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 291677500
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "store-categories",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Store categories",
+    "tags": [],
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/store-categories.feature"
+  },
+  {
+    "description": "  As a user I want to click on a product to receive more details about it.",
+    "elements": [
+      {
+        "id": "view-product-page;click-a-specific-product-to-view-the-detailed-product-page",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Click a specific product to view the detailed product page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that we are on Willy's website",
+            "result": {
+              "status": "passed",
+              "duration": 1714017300
+            },
+            "line": 5,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:9"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we accepted the standard cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 3892059500
+            },
+            "line": 6,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "that we have been through the initial where to deliver popup",
+            "result": {
+              "status": "passed",
+              "duration": 5376109000
+            },
+            "line": 7,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\common-background.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "the user clicks on a product",
+            "result": {
+              "status": "passed",
+              "duration": 227858900
+            },
+            "line": 10,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\view-product-page.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "the user should be shown an overview of the product and different tabs",
+            "result": {
+              "status": "passed",
+              "duration": 555636100
+            },
+            "line": 11,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\view-product-page.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "the user clicks the other info-tab to view other information about the product",
+            "result": {
+              "status": "passed",
+              "duration": 420828900
+            },
+            "line": 12,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\step-definitions\\view-product-page.js:25"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 4207157200
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\simon\\OneDrive\\Dokument\\GitHub\\Willys-automated-testing\\node_modules\\updated-selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "view-product-page",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "View Product Page",
+    "tags": [],
+    "uri": "C:/Users/simon/OneDrive/Dokument/GitHub/Willys-automated-testing/features/view-product-page.feature"
   }
 ]
