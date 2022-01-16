@@ -11,6 +11,7 @@ module.exports = function () {
 
   this.When(/^adds "([^"]*)", "([^"]*)", "([^"]*)", "([^"]*)", "([^"]*)", "([^"]*)" to the cart$/,
     async function (baguette, butter, tuna, majo, ruccola, tomatoes) {
+      //Better alternative: async function(...ingredients)
       ingredients.push(baguette, butter, tuna, majo, ruccola, tomatoes);
       let plusIcon;
       for (let ingredient of ingredients) {
