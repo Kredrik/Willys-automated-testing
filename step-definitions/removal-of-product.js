@@ -8,7 +8,7 @@ module.exports = function () {
     let plusButton1 = allButtons[15];
     await plusButton1.click();
 
-    let plusButton2 = allButtons[18];
+    let plusButton2 = allButtons[12];
     await plusButton2.click();
 
     await slowDown();
