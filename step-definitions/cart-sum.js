@@ -20,11 +20,19 @@ module.exports = function () {
     await driver.executeScript
       ('document.querySelector(\'a[href="/sortiment/brod-och-kakor/brod"]\').scrollIntoView()');
     await breadLink.click();
+    await slowDown();
+
+    let h2Text;
+    while (h2Text !== 'Bröd') {
+      h2Text = await (await driver.findElement
+        (By.css('h2'))).getText();
+      await driver.sleep(100);
+    }
   });
 
   this.Given(/^that there are products in the cart$/, async function () {
 
-    products = await driver.findElements
+    let products = await driver.findElements
       (by.css('[itemtype="https://schema.org/Product"]'));
 
     let baguette;
